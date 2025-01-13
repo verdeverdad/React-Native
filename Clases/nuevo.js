@@ -1,5 +1,6 @@
 console.log("hola javascript estamos de vuelta");
 console.log("esta vez si o que?")
+console.log("quedeque?")
 console.log(1+1)
 
 const names = "sofi";
