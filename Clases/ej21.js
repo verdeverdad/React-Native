@@ -1,5 +1,5 @@
 let edad = 33;
-let telefono = 092207574;
+let telefono = 92207574;
 let calle = "Rivera";
 let numPuerta = 2099;
 
