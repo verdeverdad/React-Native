@@ -6,3 +6,4 @@ let cuartaLetra = texto.charAt(0);
 let resultado = primerLetra.concat(segundaLetra, terceraLetra, cuartaLetra);
 
 console.log(resultado.toLowerCase());
+//console.log(texto.split('').reverse().join(''));
