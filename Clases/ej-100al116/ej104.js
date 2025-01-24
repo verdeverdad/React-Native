@@ -18,4 +18,6 @@ while (contador < 10) {
 }
 }
 
-fibonacci()
+fibonacci();
+fibonacci();
+fibonacci();
