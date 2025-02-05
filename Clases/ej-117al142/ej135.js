@@ -12,7 +12,7 @@ let mutantes = [
     "Ororo Monroe"
 ]
 mutantes.forEach(function (mutante, indice) {
-    console.log("indice", indice);
+    console.log("indice: ", indice);
 
-    console.log(mutante);
+    console.log(`Mutante: ${mutante}`);
   });

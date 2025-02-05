@@ -18,4 +18,4 @@ mutantes.forEach(function (mutante) {
 );
 
 
-console.log("concatenar: " + mutantes[3] + "y " + mutantes[9])
+console.log("concatenar: " + mutantes[3] + " y " + mutantes[9])

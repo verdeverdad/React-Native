@@ -1,19 +1,14 @@
-let numeros = [
-    10,
-    15,
-    27,
-    33,
-    70,
-    55,
-    7,
-    22
-]
+const numeros = [];
+for (let i = 0; i <= 100; i++) {
+  numeros.push(i);
+}
 
 const nuevaLista = numeros.map(function (num, indice) {
-    
+    if (num <=10) {
+      
     console.log(("indice", indice) + " " + num + " " + (num + 10))
-    return num + 10;
-    
+}
+return num + 10;
   });
 
-  console.log(nuevaLista)
+  console.log(nuevaLista);

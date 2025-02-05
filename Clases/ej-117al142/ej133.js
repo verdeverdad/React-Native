@@ -17,7 +17,8 @@ console.log(mutantes);
 console.log(string);
 
 if (mutantes.indexOf("Lorna Sally Dane") > -1) {
-    return
+    return console.log("break");
+   
 }
 else {
     console.log(mutantes);
