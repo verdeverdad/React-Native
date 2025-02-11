@@ -28,7 +28,7 @@ const datos = {
     url: "https://swapi.dev/api/people/1/",
   };
 
-  const  { name, birth_year, url}  = datos;
+  const  { name, birth_year, url }  = datos;
 //    const [] = datos
    console.log("Name: " + name);
    console.log("Bday: " + birth_year);
