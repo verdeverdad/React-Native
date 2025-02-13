@@ -5,6 +5,7 @@ const persona = {
         console.log(`Hola ${this.nombre} ${this.apellido}`);
     }
     
+    
 };
 
 persona.dni = 50422416;

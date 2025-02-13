@@ -131,7 +131,7 @@ let juegos = [
 ]
 
 
-let zona = 1;
+let zona;
 
 function obtenerLocalidad(zona) {
   switch (zona) {

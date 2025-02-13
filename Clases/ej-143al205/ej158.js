@@ -130,40 +130,57 @@ let juegos = [
     }
 ]
 
+
 let zona = 1;
-
 function obtenerLocalidad(zona) {
-  switch (zona) {
-    case 1:
-      return 'Capital Federal';
-    case 2:
-      return 'Santa Fe';
-    case 3:
-      return 'Buenos Aires';
-    default:
-      return 'Capital Federal'; // Valor por defecto
-  }
+    switch (zona) {
+        case 1:
+            return 'Capital Federal';
+        case 2:
+            return 'Santa Fe';
+        case 3:
+            return 'Buenos Aires';
+        default:
+            return 'Capital Federal'; // Valor por defecto
+    }
 }
-
 const localidadFiltrada = obtenerLocalidad(zona);
 
 
 
-  function ordenarJuegos(juegos, orden) {
-    // Ordenar los juegos según el precio
+function ordenarJuegos(orden) {
     juegos.sort((a, b) => {
-      if (orden === 'ASC') {
-        return a.precio - b.precio;
-      } else if (orden === 'DESC') {
-        return b.precio - a.precio;
-      }
-    })}
+        const precioA = a.precio;
+        const precioB = b.precio;
+
+        if (orden === 'ASC') {
+            return precioA - precioB; // Orden ascendente
+        } else {
+            return precioB - precioA; // Orden descendente
+        }
+    });
+}
 
 
-    
+
+// Filtrar y mostrar juegos
 juegos.filter(juego => juego.localidad === localidadFiltrada)
-.forEach(juego => {
+    .forEach(juego => {
+        juego.imprimirEnPantalla();
+    });
 
-  juego.imprimirEnPantalla();
-  ordenarJuegos(juegos, "ASC")
-});
+// Ordenar y mostrar juegos ordenados
+ordenarJuegos("ASC"); // Ordena antes de mostrar
+console.log("\nJuegos ordenados por precio (ascendente):");
+juegos.filter(juego => juego.localidad === localidadFiltrada) // Vuelve a filtrar si es necesario
+    .forEach(juego => {
+        juego.imprimirEnPantalla();
+    });
+
+
+ordenarJuegos("DESC"); // Ordena antes de mostrar
+console.log("\nJuegos ordenados por precio (descendente):");
+juegos.filter(juego => juego.localidad === localidadFiltrada) // Vuelve a filtrar si es necesario
+    .forEach(juego => {
+        juego.imprimirEnPantalla();
+    });
