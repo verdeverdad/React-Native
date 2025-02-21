@@ -8,11 +8,13 @@ const miMascota: {
     fechaDeNacimiento: "23-02-2014"
 };
 
-function mostrarDatosMascota(Mascotas) {
+function mostrarDatosMascota(mascotas) {
     
-    console.log(`La mascota se llama ${Mascotas.nombre} y tiene ${Mascotas.edad} años`)
-    if (Mascotas.fechaDeNacimiento) {
-        console.log(`La mascota nació en ${Mascotas.fechaDeNacimiento}`)
+    console.log(`La mascota se llama ${mascotas.nombre} y tiene ${mascotas.edad} años`)
+    if (mascotas.fechaDeNacimiento) {
+        console.log(`La mascota nació el ${mascotas.fechaDeNacimiento}`)
     }
 }
-mostrarDatosMascota(miMascota)
+mostrarDatosMascota(miMascota);
+
+export default {};
